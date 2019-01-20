@@ -56,13 +56,13 @@
 // };
 
 exports.config = {
-	specs: ['../Tests/demo.spec.js'],
+	//specs: ['../Tests/demo.spec.js'],
 
-	// suites:{
+	suites:{
 
-	// 	smoke:['../Tests/Demo.spec.js'],
-	// 	regression:['../Tests/*.spec.js']
-	// },
+		smoke:['../Tests/Demo.spec.js'],
+		regression:['../Tests/*.spec.js']
+	},
  
 	sauceUser: process.env.SAUCE_USERNAME,
 	sauceKey: process.env.SAUCE_ACCESS_KEY,
@@ -70,14 +70,14 @@ exports.config = {
 	// restartBrowserBetweenTests: true,
 
     multiCapabilities: [
-		{
-        browserName: 'firefox',
-        version: '61.0',
-        platform: 'macOS 10.14',
-        name: "firefox-tests",
-        shardTestFiles: true,
-        maxInstances: 25
-	}, 
+// 		{
+//         browserName: 'firefox',
+//         version: '61.0',
+//         platform: 'macOS 10.14',
+//         name: "firefox-tests",
+//         shardTestFiles: true,
+//         maxInstances: 25
+// 	}, 
 	{
         browserName: 'chrome',
         version: '70.0',
