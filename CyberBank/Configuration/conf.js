@@ -16,7 +16,7 @@ exports.config = {
     maxInstances: 2
   },
   
-  specs: ['../Tests/AddCustomer.spec.js'], 
+  specs: ['../Tests/demo.spec.js'], 
 
 
   //this is how we gonna test these;
